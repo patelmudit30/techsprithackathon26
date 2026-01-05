@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Departments | CodeBash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0e17; color: white; }
+        .soul-title { font-family: 'Cinzel', serif; }
+        .glass-panel { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .input-style { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); color: white; font-size: 0.8rem; }
+        th { font-family: 'Cinzel', serif; color: #60a5fa; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.2em; }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+            <div>
+                <div class="text-blue-500 text-[10px] font-bold tracking-[0.5em] mb-2 uppercase">CodeBash Admin Console</div>
+                <h1 class="soul-title text-4xl">Grievance <span class="text-white opacity-80">Matrix</span></h1>
+            </div>
+            <div class="glass-panel px-6 py-3 rounded-2xl border-blue-500/20">
+                <span class="text-[10px] text-gray-500 uppercase block tracking-widest">Active Officer</span>
+                <span class="text-sm font-bold text-blue-400 tracking-wide">Admin_Root_2026</span>
+            </div>
+        </div>
+
+        <div class="glass-panel rounded-[3rem] overflow-hidden shadow-2xl">
+            <table class="w-full text-left">
+                <thead class="bg-white/5">
+                    <tr>
+                        <th class="p-8">Ticket Info</th>
+                        <th class="p-8">Assignee</th>
+                        <th class="p-8">Status</th>
+                        <th class="p-8 text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                    <tr class="hover:bg-white/[0.02] transition">
+                        <td class="p-8">
+                            <div class="font-bold text-white mb-1">STU-8821</div>
+                            <div class="text-[10px] text-gray-500 uppercase tracking-widest">WiFi Node Failure</div>
+                        </td>
+                        <td class="p-8">
+                            <select class="input-style p-3 rounded-xl w-full max-w-xs outline-none focus:border-blue-500 transition">
+                                <option value="it_mike">IT - Mike Ross</option>
+                                <option value="it_rachel">IT - Rachel Zane</option>
+                            </select>
+                        </td>
+                        <td class="p-8">
+                            <span class="bg-blue-500/10 text-blue-400 text-[10px] px-4 py-1.5 rounded-full font-bold uppercase tracking-widest">In Progress</span>
+                        </td>
+                        <td class="p-8 text-right">
+                            <button class="text-xs font-bold text-blue-400 hover:text-white transition uppercase tracking-widest">Update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

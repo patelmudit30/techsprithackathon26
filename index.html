@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Signup Form</title>
+    <style>
+        /* General Reset and Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle, #2c3e50, #000000); /* Dark moody background */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        h1 {
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: rgba(10, 15, 25, 0.9); /* Dark semi-transparent box */
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        /* Input Styles */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: transparent;
+            border: 1px solid #555;
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #888;
+        }
+
+        /* Terms Text */
+        .terms {
+            font-size: 11px;
+            color: #aaa;
+            margin: 15px 0;
+        }
+
+        /* Button Style */
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1b2a3a;
+            color: #d1d1d1;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .signup-btn:hover {
+            background-color: #243b55;
+            color: white;
+        }
+
+        /* Social Icons Mockup */
+        .social-links {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #444;
+            line-height: 30px;
+            margin: 0 5px;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flat Signup Form</h1>
+
+    <div class="form-container">
+        <form>
+            <input type="text" placeholder="Realname" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            
+            <p class="terms">By clicking signup, I agree to your terms</p>
+            
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <div class="social-links">
+            Follow us on: 
+            <div class="icons">
+                <span class="icon" style="background-color: #3b5998;">f</span>
+                <span class="icon" style="background-color: #00acee;">t</span>
+                <span class="icon" style="background-color: #db4a39;">g+</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

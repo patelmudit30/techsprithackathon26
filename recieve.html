@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox | CodeBash Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0e17; color: white; }
+        .soul-title { font-family: 'Cinzel', serif; }
+        .glass-panel { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .msg-row { border-bottom: 1px solid rgba(255, 255, 255, 0.03); transition: 0.3s; }
+        .msg-row:hover { background: rgba(56, 189, 248, 0.03); }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <header class="flex justify-between items-center mb-16">
+            <div>
+                <h1 class="soul-title text-3xl mb-1 text-blue-400">CODE<span class="text-white">BASH</span></h1>
+                <p class="text-[10px] tracking-[0.4em] text-gray-600 uppercase">Incoming Grievance Stream</p>
+            </div>
+            <a href="loginpanel.html" class="text-xs font-bold text-gray-400 hover:text-white transition uppercase tracking-widest">Back to Panel</a>
+        </header>
+
+        <div class="glass-panel rounded-[2.5rem] overflow-hidden">
+            <div class="p-8 border-b border-white/5 bg-white/5 flex justify-between items-center">
+                <span class="soul-title text-sm tracking-widest text-blue-300">Active Inbox</span>
+                <span class="text-[10px] text-gray-500">3 NEW NOTIFICATIONS</span>
+            </div>
+            
+            <div class="divide-y divide-white/5">
+                <div class="msg-row p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div class="flex items-center space-x-6">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20 text-blue-400 font-bold">W</div>
+                        <div>
+                            <h4 class="font-bold text-white">WiFi Connectivity Issues</h4>
+                            <p class="text-xs text-gray-500">From: STU-8821 • Department: IT</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <span class="text-[10px] text-gray-600 uppercase font-bold tracking-tighter">Jan 05, 2026</span>
+                        <a href="#" class="bg-blue-600/10 text-blue-400 px-6 py-2 rounded-xl text-xs font-bold hover:bg-blue-600 hover:text-white transition">View Detail</a>
+                    </div>
+                </div>
+
+                <div class="msg-row p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div class="flex items-center space-x-6">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center border border-purple-500/20 text-purple-400 font-bold">L</div>
+                        <div>
+                            <h4 class="font-bold text-white">Leaking Pipe in Dorm B</h4>
+                            <p class="text-xs text-gray-500">From: STU-7742 • Department: Maintenance</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <span class="text-[10px] text-gray-600 uppercase font-bold tracking-tighter">Jan 04, 2026</span>
+                        <a href="#" class="bg-purple-600/10 text-purple-400 px-6 py-2 rounded-xl text-xs font-bold hover:bg-purple-600 hover:text-white transition">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

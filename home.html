@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeBash | College Grievance Portal</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0a0e17;
+            color: white;
+        }
+        .soul-title {
+            font-family: 'Cinzel', serif;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .blur-orb {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(56,189,248,0.12) 0%, rgba(56,189,248,0) 70%);
+            filter: blur(120px);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="relative min-h-screen overflow-x-hidden">
+
+    <!-- background glow -->
+    <div class="blur-orb -top-40 -left-40"></div>
+    <div class="blur-orb top-1/3 -right-40"></div>
+
+    <!-- navbar -->
+    <nav class="glass sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="home.html" class="soul-title text-2xl font-bold tracking-widest text-blue-400">
+                CODE<span class="text-white">BASH</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-gray-400">
+                <a href="home.html" class="text-blue-400">home</a>
+                <a href="complaint.html" class="hover:text-blue-400">file complaint</a>
+                <a href="status.html" class="hover:text-blue-400">track status</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="max-w-7xl mx-auto px-6 pt-20 pb-24 text-center">
+        <h1 class="soul-title text-4xl md:text-6xl font-bold mb-6">
+            College Digital Grievance Portal
+        </h1>
+        <p class="text-gray-400 max-w-3xl mx-auto text-lg">
+            A transparent, secure, and efficient platform for students and faculty
+            to raise complaints and track their resolution.
+        </p>
+    </section>
+
+    <!-- role cards -->
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-28">
+
+        <!-- student -->
+        <div class="glass p-10 rounded-3xl text-center hover:scale-105 transition">
+            <h2 class="soul-title text-2xl mb-4 text-blue-400">Student</h2>
+            <p class="text-gray-400 mb-6">
+                Academic, exam, hostel, fees, or campus facility complaints.
+            </p>
+            <button onclick="location.href='login.html'"
+                class="w-full bg-blue-600 py-3 rounded-xl font-semibold hover:bg-blue-500 transition">
+                student login
+            </button>
+        </div>
+
+        <!-- faculty -->
+        <div class="glass p-10 rounded-3xl text-center hover:scale-105 transition">
+            <h2 class="soul-title text-2xl mb-4 text-purple-400">Faculty</h2>
+            <p class="text-gray-400 mb-6">
+                Raise concerns related to administration, labs, or resources.
+            </p>
+            <button onclick="location.href='login.html'"
+                class="w-full bg-purple-600 py-3 rounded-xl font-semibold hover:bg-purple-500 transition">
+                faculty login
+            </button>
+        </div>
+
+        <!-- admin -->
+        <div class="glass p-10 rounded-3xl text-center hover:scale-105 transition">
+            <h2 class="soul-title text-2xl mb-4 text-green-400">Admin</h2>
+            <p class="text-gray-400 mb-6">
+                Assign complaints to departments and monitor resolution.
+            </p>
+            <button onclick="location.href='loginpanel.html'"
+                class="w-full bg-green-600 py-3 rounded-xl font-semibold hover:bg-green-500 transition">
+                admin panel
+            </button>
+        </div>
+
+    </section>
+
+    <!-- features -->
+    <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-24 text-center">
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-2">easy filing</h3>
+            <p class="text-gray-400 text-sm">submit complaints quickly</p>
+        </div>
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-2">live tracking</h3>
+            <p class="text-gray-400 text-sm">real-time status updates</p>
+        </div>
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-2">department assign</h3>
+            <p class="text-gray-400 text-sm">admin-controlled workflow</p>
+        </div>
+        <div class="glass p-6 rounded-2xl">
+            <h3 class="font-semibold mb-2">secure system</h3>
+            <p class="text-gray-400 text-sm">role-based access</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="glass py-6 text-center text-gray-400 text-sm">
+        © 2026 CodeBash | College Grievance Management System
+    </footer>
+
+</body>
+</html>
